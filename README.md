@@ -2,6 +2,7 @@
 
 This project demonstrates how to build an end-to-end data pipeline to extract tweets using the Twitter API, transform the data using Python, orchestrate the pipeline using Apache Airflow on an EC2 instance, and store the results in Amazon S3.
 
+![Pipeline Diagram](images/Pipeline.png)
 ---
 
 ## 🚀 Tech Stack
@@ -79,6 +80,8 @@ df.to_csv("s3://twitter-data-bucket/elon_tweets.csv")
 Extracted tweets from Twitter API
 CSV saved in Amazon S3
 DAG orchestrated via Airflow running on EC2
+
+![Final DAG](images/Final_running_dag.png)
 
 ✨ Built as a practice project to learn orchestration, API integration, and cloud-based data pipelines.
 
